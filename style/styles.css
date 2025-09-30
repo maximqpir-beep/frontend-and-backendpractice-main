@@ -1,0 +1,315 @@
+/* ===== БАЗОВЫЕ СТИЛИ ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #831010 0%, #5a0c0c 100%);
+    min-height: 100vh;
+}
+
+/* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(131, 16, 16, 0.3);
+}
+
+/* ===== ШАПКА ===== */
+.header {
+    background: linear-gradient(135deg, #5a0c0c 0%, #831010 100%);
+    color: #ffffff;
+    text-align: center;
+    padding: 30px;
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    border-bottom: 1px solid #d4a5a5;
+}
+
+/* ===== НАВИГАЦИЯ ===== */
+.nav {
+    background: #831010;
+    padding: 20px 0;
+    border-bottom: 1px solid #d4a5a5;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 1px solid #d4a5a5;
+    background: rgba(131, 16, 16, 0.8);
+}
+
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
+.content {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+/* ===== ГЛАВНАЯ СТРАНИЦА ===== */
+.profile-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-title {
+    font-size: 32px;
+    color: #5a0c0c;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.profile-photo {
+    width: 220px;
+    height: 280px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 20px auto;
+    border: 4px solid #831010;
+    box-shadow: 0 8px 25px rgba(131, 16, 16, 0.4);
+}
+
+.profile-name {
+    font-size: 24px;
+    color: #5a0c0c;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.profile-group {
+    font-size: 18px;
+    color: #831010;
+    margin: 5px 0;
+}
+
+.about-me {
+    background: linear-gradient(135deg, #f8f0f0 0%, #ffffff 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 5px solid #831010;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333333;
+}
+
+/* ===== НАВЫКИ ===== */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 30px 0;
+}
+
+.skill-tag {
+    background: linear-gradient(135deg, #831010 0%, #a83232 100%);
+    color: #ffffff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0 4px 15px rgba(131, 16, 16, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid #a83232;
+}
+
+.skill-tag:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(131, 16, 16, 0.5);
+    background: linear-gradient(135deg, #a83232 0%, #831010 100%);
+}
+
+/* ===== ОПЫТ РАБОТЫ ===== */
+.experience-section {
+    margin-top: 50px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #5a0c0c;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.experience-card {
+    background: #f8f0f0;
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(131, 16, 16, 0.1);
+    border-left: 4px solid #831010;
+    transition: transform 0.3s ease;
+    color: #333333;
+}
+
+.experience-card:hover {
+    transform: translateX(5px);
+}
+
+.experience-title {
+    font-size: 20px;
+    color: #5a0c0c;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.experience-desc {
+    color: #666666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===== НОВОСТИ ===== */
+.news-container {
+    display: grid;
+    gap: 25px;
+}
+
+.news-card {
+    background: #f8f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(131, 16, 16, 0.1);
+    border-left: 4px solid #831010;
+    color: #333333;
+}
+
+.news-title {
+    font-size: 24px;
+    color: #5a0c0c;
+    margin: 0 0 10px 0;
+    font-weight: 600;
+}
+
+.news-meta {
+    color: #831010;
+    font-size: 14px;
+    margin: 0 0 15px 0;
+}
+
+.news-text {
+    color: #555555;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== ТОВАРЫ ===== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product-card {
+    background: #f8f0f0;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(131, 16, 16, 0.1);
+    transition: transform 0.3s ease;
+    color: #333333;
+    border: 1px solid #d4a5a5;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #d4a5a5;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #5a0c0c;
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #831010;
+    font-weight: 700;
+    margin: 5px 0;
+}
+
+/* ===== КОНТАКТЫ ===== */
+.contacts-container {
+    text-align: center;
+}
+
+.contact-info {
+    background: linear-gradient(135deg, #f8f0f0 0%, #ffffff 100%);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #333333;
+    border: 1px solid #d4a5a5;
+}
+
+.contact-button {
+    background: linear-gradient(135deg, #831010 0%, #a83232 100%);
+    color: #ffffff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #a83232;
+}
+
+.contact-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(131, 16, 16, 0.4);
+    background: linear-gradient(135deg, #a83232 0%, #831010 100%);
+}
+
+/* ===== ФУТЕР ===== */
+.footer {
+    background: linear-gradient(135deg, #5a0c0c 0%, #831010 100%);
+    color: #f8f0f0;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #d4a5a5;
+}
